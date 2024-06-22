@@ -6,7 +6,7 @@
 }
 
 html, body, #main {
-	color: #555;
+	color: #973016;
 	height: 100%;
 }
 
@@ -14,12 +14,18 @@ aside {
 	width: 300px;
 	height: 100%;
 	position: fixed;
-	background: #262a30;
+	background: #ccd5ae;
 }
 
 nav {
 	height: 50px;
-	/*background: #b9e1b1;*/
+	background: #fefae0; /* 添加背景色以确保可见 */
+	position: fixed; /* 固定位置以确保始终显示 */
+	width: calc(100% - 300px); /* 减去aside的宽度 */
+	left: 300px; /* 保留aside的位置 */
+	top: 0; /* 确保在顶部 */
+	box-sizing: border-box; /* 包括padding和border在宽度计算中 */
+	z-index: 10;
 }
 
 #content {
@@ -40,8 +46,8 @@ nav ul li {
 	list-style: none;
 }
 nav ul li a{
-	color: #555;
-	font-size: 12px;
+	color: #973016;
+	font-size: 14px;
 	text-decoration: none;
 }
 nav ul li a:hover {
@@ -59,10 +65,10 @@ aside input {
 	padding: 0;
 	left: 0;
 	font-size: 14px;
-	background: #d8d8d9;
+	background: #faedcd;
 	text-indent: 20px;
 	outline: none;
-	color: #87daff;
+	color: #7b4516;
 	position: absolute;
 }
 
@@ -71,11 +77,11 @@ aside #search #search-icon {
 	position: absolute;
 	top: 0;
 	right: 0;
-	color: #999;
+	color: #fefae0;
 	font-size: 20px;
 	width: 40px;
 	height: 50px;
-	background: #131417;
+	background: #d4a37a;
 	text-align: center;
 	line-height: 2.5;
 	text-decoration: none
@@ -90,7 +96,7 @@ aside #search #search-icon:hover {
 }
 
 aside #search .icon-active{
-	color: #a9d9f1;
+	color: #87daff;
 }
 
 /* 滚动条 */
@@ -112,20 +118,20 @@ aside ul li {
 	line-height: 25px;
 }
 aside ul li a {
-	color: #999;
+	color: #ad5038;
 	font-size: 14px;
 	text-decoration: none
 
 }
 aside ul li a:hover {
-	color: #ccc;
-	border-bottom: 1px solid #ccc;
+	color: #600707;
+	border-bottom: 1px solid #600707;
 	cursor:pointer;
 }
 aside #tree .active a,
 aside #tree .active a:hover {
-	color: #87daff;
-	border-bottom: 1px solid #87daff;
+	color: #600707;
+	border-bottom: 1px solid #600707;
 }
 /* #################### 侧边栏 #################### */
 
@@ -150,6 +156,7 @@ aside #tree .active a:hover {
 /* 文章各个元素间隔 */
 #article {
 	padding: 50px 30px;
+	margin-top: 50px;
 }
 #article * {
 	margin: 30px 0;
@@ -256,7 +263,7 @@ aside #tree .active a:hover {
 
 #article table tr:hover,
 #article table td:hover {
-  background: #badbf5;
+  background: #e9edc9;
   color: #FFF;
 }
 
@@ -329,6 +336,7 @@ aside #toc a:hover{
 
 #articleList {
 	position: absolute;
+	top: 70px;
 }
 
 #articleList .article-li {
@@ -360,20 +368,20 @@ aside #toc a:hover{
 
 #articleList .article-date{
 	position: relative;
-	background: #e06c75;
-	color: #f9f7ed;
+	background: #e5ebae;
+	color: #ffffff;
 	padding: 10px;
 	top: -5px;
-	border-radius: 2px;
+	border-radius: 20px;
 	margin-left: 30px;
 }
 
 #articleList .article-read {
     position: absolute;
-    background: #e06c75;
-    color: #f9f7ed;
+    background: #e5ebae;
+    color: #ffffff;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 20px;
     right: 15px;
     margin-top: 140px;
     text-decoration: none;
@@ -382,7 +390,7 @@ aside #toc a:hover{
 
 #articleList .article-title {
 	position: relative;
-	color: #555;
+	color: #970e0e;
 	text-decoration: none;
 	font-size: 24px;
 	font-weight: bold;
