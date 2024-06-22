@@ -59,7 +59,7 @@ aside input {
 	padding: 0;
 	left: 0;
 	font-size: 14px;
-	background: #131417;
+	background: #d8d8d9;
 	text-indent: 20px;
 	outline: none;
 	color: #87daff;
@@ -90,7 +90,7 @@ aside #search #search-icon:hover {
 }
 
 aside #search .icon-active{
-	color: #e06c75;
+	color: #a9d9f1;
 }
 
 /* 滚动条 */
